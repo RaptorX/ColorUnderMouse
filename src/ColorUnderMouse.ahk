@@ -36,6 +36,12 @@
 
 script.GetLicense()
 
+try script.Update("https://raw.githubusercontent.com/RaptorX/ColorUnderMouse/devel/ver"
+                 ,"https://github.com/RaptorX/ColorUnderMouse/releases/download/latest/ColorUnderMouse.zip")
+Catch, err
+	if err.code != 6 ; up to date
+		MsgBox, % err.msg
+
 ;**************************************
 #c::  ;Windows+C hotkey will get color at current position of mouse.  Change the hotkey to your preference
 MouseGetPos,x,y
