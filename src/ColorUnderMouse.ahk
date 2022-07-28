@@ -1,7 +1,7 @@
 #SingleInstance, Force
 #Requires Autohotkey v1.1.33+
 ;--
-;@Ahk2Exe-SetVersion     0.1.0
+;@Ahk2Exe-SetVersion     0.2.0
 ;@Ahk2Exe-SetMainIcon    res\main.ico
 ;@Ahk2Exe-SetProductName ColorUnderMouse
 ;@Ahk2Exe-SetDescription Gets the current hex value of the pixel under the mouse
@@ -15,7 +15,7 @@
  
  global script := {base         : script
                   ,name          : regexreplace(A_ScriptName, "\.\w+")
-                  ,version      : "0.1.0"
+                  ,version      : "0.2.0"
                   ,author       : "Joe Glines"
                   ,email        : "joe.glines@the-automator.com"
                   ,crtdate      : "July 28, 2022"
