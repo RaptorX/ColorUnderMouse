@@ -11,6 +11,22 @@
 ; Right now you can  get a coupon code here: https://the-Automator.com/Learn
 ;*******************************************************
 ;{#Includes
+ #Include <ScriptObject\ScriptObject>
+ 
+ global script := {base         : script
+                  ,name          : regexreplace(A_ScriptName, "\.\w+")
+                  ,version      : "0.1.0"
+                  ,author       : "Joe Glines"
+                  ,email        : "joe.glines@the-automator.com"
+                  ,crtdate      : "July 28, 2022"
+                  ,moddate      : "July 28, 2022"
+                  ,homepagetext : ""
+                  ,homepagelink : ""
+                  ,donateLink   : "https://www.paypal.com/donate?hosted_button_id=MBT5HSD9G94N6"
+                  ,resfolder    : A_ScriptDir "\res"
+                  ,iconfile     : A_ScriptDir "\res\main.ico"
+                  ,configfile   : A_ScriptDir "\settings.ini"
+                  ,configfolder : A_ScriptDir ""}
 ;}
 ;{#Directives
 ;}--
