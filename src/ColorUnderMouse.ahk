@@ -1,4 +1,4 @@
-#SingleInstance
+#SingleInstance, Force
 #Requires Autohotkey v1.1.33+
 ;--
 ;@Ahk2Exe-SetVersion     0.1.0
@@ -31,9 +31,10 @@
 ;{#Directives
 ;}--
 ;{#Settings
+ Menu, Tray, Icon, C:\WINDOWS\system32\shell32.dll,131 ;Set icon to colored butterfly
 ;}
-#SingleInstance,Force
-Menu, Tray, Icon, C:\WINDOWS\system32\shell32.dll,131 ;Set icon to colored butterfly
+
+script.GetLicense()
 
 ;**************************************
 #c::  ;Windows+C hotkey will get color at current position of mouse.  Change the hotkey to your preference
